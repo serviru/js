@@ -1,0 +1,39 @@
+/*1. С помощью цикла for написать алгоритм для вывода чисел (выводите в консоль, с помощью console.log) от 0 до 10
+включительно, чтобы результат выглядел так:
+0 – это ноль
+1 – нечетное число
+2 – четное число
+3 – нечетное число
+…
+10 – четное числ
+*/
+// не понял пока как от чётности нуля уйти.
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let user_namber = +prompt('Введите ваше число: ');
+        for (let el = 0; el <= user_namber; el++){
+            if(el === 0){
+            console.log(el + ' -' + ' Это число ноль');
+            }
+            else if (el % 2 === 0){
+            console.log(el + ' -' + ' Это чётное число');
+            }
+            else {
+
+            console.log(el + ' -' + ' Это нечётное число')
+            }
+        }
+    </script>
+
+</body>
+</html>
