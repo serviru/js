@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2
+        // Это префексная форма, возвращает новое значение. Так как с = 1 + 1 получим 2
+
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1
+        // Это постпрефексная форма, возвращает старое значение. Так как d = 1  получим 1
+
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5
+        // Здесь получается префексная форма, но так как, а, уже равно 3 прибавляем 2 с = 2 + 3
+
+        //пример 4
+        d = 2 + b++;
+        alert(d); //ответ: 4
+        alert(a); //3
+        alert(b); //3
+        /*Здесь получается постпрефексная форма b равно 2 в начале примера, далее в
+        результате всех
+        4 примеров имеем такие результаты */
+    </script>
+
+</body>
+</html>
+
+
+
